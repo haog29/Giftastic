@@ -1,0 +1,47 @@
+h1 {
+    background-color: pink; 
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    padding: 12px;
+}
+h4 {
+    background-color: rgb(243, 240, 64);
+    font-family: 'Pacifico', cursive;
+    padding: 12px;
+    margin-right: 1076px;
+    text-align: center;
+    
+}
+
+.emotions {
+    border: 3px dotted black;
+    background-color: rgb(245, 71, 71);
+    color: white;
+    padding: 10px;
+}
+.emotions:hover {
+    background-color: rgb(243, 243, 91);
+    color: black;
+}
+.wrapper {
+    height: 138px;
+    width:300px;
+    background-color: rgb(243, 243, 91);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Pacifico', cursive;
+}
+label {
+    color: black;
+    font-size: 1.4rem;
+
+}
+.gifImg {
+    display: inline-block;
+}
+.gif {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
