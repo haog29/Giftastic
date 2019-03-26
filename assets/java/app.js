@@ -1,20 +1,21 @@
-// BUG LIST
-// innerHTML has to be emptied out
-// new button must be added
-// Hao has to be happy
 
 // 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag='
 
-let toggle = false
 
 const getGif = () => {
   let someGif = document.querySelector('#emotion-input').value
   gifApi(someGif)
   document.querySelector('#emotion-input').value = ''
-  document.createElement()
+
+  let insertGif = document.createElement('button')
+  insertGif.className = 'emotions'
+  insertGif.setAttribute('data-emotions', someGif)
+  insertGif.textContent = someGif
+  document.querySelector('#insert').append(insertGif)
 }
 
 const gifApi = (content) => {
+
   fetch(`https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=${content}&limit=10&rating=g`)
     .then(r => r.json())
     .then(r => {
@@ -36,6 +37,7 @@ const gifApi = (content) => {
         document.getElementById('gifDiv').append(gifElem)
 
 
+
       }
     })
     .catch(e => console.error(e))
@@ -52,12 +54,10 @@ document.addEventListener('click', ({ target }) => {
     gifApi(emotions)
 
   } else if (target.className === 'gif') {
-
-    toggle = !toggle
     let { still, animated } = target.dataset
-    if (toggle) {
+    if (target.src === still ) {
       target.setAttribute('src', animated)
-    } else {
+    } else if (target.src === animated) {
       target.setAttribute('src', still)
     }
 

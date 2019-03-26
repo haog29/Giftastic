@@ -13,23 +13,26 @@ h4 {
     
 }
 
+
 .emotions {
     border: 3px dotted black;
     background-color: rgb(245, 71, 71);
     color: white;
     padding: 10px;
+    margin-right: 25px
 }
 .emotions:hover {
     background-color: rgb(243, 243, 91);
     color: black;
+    margin-right: 25px
 }
 .wrapper {
+    border: 2px solid black;
     height: 138px;
     width:300px;
     background-color: rgb(243, 243, 91);
     text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin :10px;
     font-family: 'Pacifico', cursive;
 }
 label {
@@ -45,3 +48,17 @@ label {
     height: 200px;
     margin: 5px;
 }
+#add-emotion, #Home {
+    border: 3px dotted black;
+    background-color: rgb(245, 71, 71);
+    color: white; padding: 10px;
+    padding: 10px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+     {
+      width: 100%;
+    }
+  }

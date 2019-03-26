@@ -15,8 +15,27 @@
 
 
     <div id="container">
+
         <h1> Tata's Emotion Collections! </h1>
+        <a href="https://haog29.github.io/Responsive-Portfolio/"><button id="Home">Go Home</button></a>
+        <div class="wrapper">
+
+                <form id="emotion-form">
+                    <label id="editText" for="emotion-input">how are you feeling?</label>
+                    <input type="text" id="emotion-input"  placeholder="type here..." style="color: black"><br>
+        
+                    <!-- Button triggers new movie to be added -->
+                    <button id="add-emotion" type="submit" onclick="getGif()" > 
+                    Add your emotion
+                </button>
+                </form>
+            </div>
+            <div class="row">
+                  
         <h4> Pick your emotions here : </h4>
+        
+    </div>
+        
         <div class="row">
             <div class="col s1">
                 <button class="emotions" data-emotions="happy">happy</button>
@@ -45,27 +64,13 @@
         </div>
 
         <div class="row">
-            
+            <div class="col s12 m6" id="insert">  </div>
         </div>
 
-        <div class="wrapper">
-
-        <form id="emotion-form">
-            <label id="editText" for="emotion-input">how are you feeling?</label>
-            <input type="text" id="emotion-input"  placeholder="type here..." style="color: black"><br>
-
-            <!-- Button triggers new movie to be added -->
-            <button id="add-emotion" type="submit" onclick="getGif()" style="    border: 3px dotted black;
-            background-color: rgb(245, 71, 71);
-            color: white;
-            padding: 10px;" > 
-            Add your emotion
-        </button>
-        </form>
-    </div>
+       
     <br>
     <div class="row">
-        <div class="col s12" id="gifDiv">
+        <div class="col s12 m6" id="gifDiv">
 
         </div>        
     </div>
