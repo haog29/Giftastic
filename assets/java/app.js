@@ -2,6 +2,7 @@
 // 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag='
 
 
+//Creating buttons and getting the value
 const getGif = () => {
   let someGif = document.querySelector('#emotion-input').value
   gifApi(someGif)
@@ -13,6 +14,8 @@ const getGif = () => {
   insertGif.textContent = someGif
   document.querySelector('#insert').append(insertGif)
 }
+
+
 
 const gifApi = (content) => {
 
@@ -26,6 +29,7 @@ const gifApi = (content) => {
         let { url: still } = r.data[i].images.fixed_height_still
         let { url: animated } = r.data[i].images.fixed_height
 
+        //I just put a Static " rating " to appear together with the gif
         gifElem.className = 'gifImg'
         gifContent = `
           <img class="gif" src="${still}" alt="${content}" data-still="${still}" data-animated="${animated}" >

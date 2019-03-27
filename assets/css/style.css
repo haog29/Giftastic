@@ -4,7 +4,7 @@ h1 {
     font-family: 'Pacifico', cursive;
     padding: 12px;
 }
-h4 {
+h5 {
     background-color: rgb(243, 240, 64);
     font-family: 'Pacifico', cursive;
     padding: 12px;
@@ -19,7 +19,7 @@ h4 {
     background-color: rgb(245, 71, 71);
     color: white;
     padding: 10px;
-    margin-right: 25px
+    /* margin: 50px 100px 50px 50px; */
 }
 .emotions:hover {
     background-color: rgb(243, 243, 91);
@@ -55,10 +55,10 @@ label {
     padding: 10px;
 
 }
-
+/* 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-     {
+    /* html {
       width: 100%;
     }
-  }
+  } */ 
